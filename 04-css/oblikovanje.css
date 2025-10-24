@@ -47,10 +47,10 @@ padding-top: 0.5em;
     background-color: rgb(51, 0, 102, 0.1);
 }
 
-div {
+/* div {
     border-color: red;
     border-style: solid;
-}
+} */
 
 .slika {
     font-size: 0.9em;
@@ -64,6 +64,7 @@ div {
 .slika img{
     width: 100%;
     height: auto;
+    border-radius: 30%;
 }
 
 p {
@@ -72,9 +73,8 @@ p {
 
 .slika p:last-child{
     font-size: 0.8em;
-  border: 2px solid orange;
   margin-bottom: 1em;
-border-radius: 30%;
+
 }
 
 a::before{
