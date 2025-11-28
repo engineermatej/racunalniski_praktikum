@@ -3,3 +3,13 @@
 *.fls
 *.synctex.gz
 *.log
+*.bbl 
+*.blg  
+*.toc 
+*.fls 
+*.log 
+*.nav 
+*.out 
+*.pdf 
+*.pyc 
+*.snm 
