@@ -1,0 +1,209 @@
+\documentclass[11pt]{article} %To je osnovna predloga za dokument, 
+%ki ga bomo pisali. Lahko bi uporabili tudi \documentclass{report} ali
+% \documentclass{book}, vendar je \documentclass{article} najbolj primeren za 
+%krajše naloge in poročila.
+
+\usepackage[utf8]{inputenc} %Ta vrstica omogoča uporabo znakov, ki niso del osnovnega ASCII nabora, kot so č, š, ž in podobno.
+\usepackage[T1]{fontenc}
+
+\usepackage[slovene]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm} %Ta paket omogoča uporabo okolij za trditve, definicije, dokaze in podobno.
+\usepackage{mathtools}
+\usepackage{enumerate}
+
+
+%naslov (Definicija, Primer, Naloga) → krepko, ležeče, normalno
+\theoremstyle{definition}
+\newtheorem{definicija}{Definicija}
+\newtheorem{primer}{Primer}
+\newtheorem{naloga}{Naloga}
+
+\newcommand{\NN}{\mathbb{N}} %Ta ukaz definira novo ukaz \NN, ki bo v dokumentu predstavljal množico naravnih števil.
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\RR}{\mathbb{R}}
+% Če jih želiš izpisat: Zato to velja tudi v $\NN$.
+
+
+
+
+\title{Naloge iz analize}
+\author{Micka Kovač}
+\date{}   %Ta vrstica določa datum, ki bo prikazan v dokumentu. Če je prazen, se datum ne bo prikazal.
+
+
+\begin{document} %Začetek dokumenta. Vse, kar je med \begin{document} in \end{document}, bo del dokumenta, ki ga bomo ustvarili.
+
+
+Pri reševanju nalog uporabite učbenika~ \cite{vidav08,rudin87} in zapiske s predavanj.
+
+\begin{definicija}
+  Realno zaporedje $(a_n)_{n \in \NN}$ \emph{konvergira} k realnemu številu~$x$, kadar velja
+  
+  % 2. naloga
+  \[
+    ?? ?? > 0 \,.\, ?? m ?? \NN \,.\, ?? n ?? q m \,.\, |x - a_n| < ??.
+  \]
+  %
+  Pravimo tudi, da je $x$ \emph{limita} zaporedja $(a_n)_{n \in \NN}$.
+\end{definicija}
+
+\begin{naloga}
+  Izračunajte limite, če obstajajo:
+  %
+  % 4. naloga
+\begin{enumerate}
+  \item $\lim_{n \to \infty} \sqrt{n^2 + 7 n} - \sqrt{n^2 + 4 n + 1}$,
+  \item $\lim_{n \to \infty} \frac{\sin (1/n)}{e^{-n}}$,
+  \item $\lim_{n \to \infty} (1 + 2/n)^{3 n}$.
+\end{enumerate}
+\end{naloga}
+
+\begin{primer}
+  Zmnožek polinoma in trigonometrijske funkcije integriramo z metodo ">per partes"<:
+  % 
+  % 5. naloga
+    % \int x^2 \, \sin x \, dx  &= - x^2 \, \cos x + 2 \int x \, \cos x \, dx \\
+    %                           &= - x^2 \, \cos x + 2 \left(x \, \sin x - \int \sin x \, dx \right) \\
+    %                           &= - x^2 \, \cos x + 2 x \, \sin x + 2 \cos x + C \\
+    %                           &= (2 - x^2) \, \cos x + 2 x \, \sin x + C.
+\end{primer}
+
+\bibliographystyle{plain} %Ta vrstica določa slog, ki se bo uporabljal za oblikovanje bibliografskih navedb. "plain" je enostaven slog, ki navaja avtorja, naslov, leto in druge osnovne informacije o viru.
+\bibliography{nalbib} %Ta vrstica določa ime datoteke, ki vsebuje bibliografske podatke. V tem primeru je datoteka "nalbib.bib". Ta datoteka mora biti v istem direktoriju kot dokument, ki ga pišemo, ali pa mora biti pot do nje pravilno navedena.
+
+
+
+\end{document}
+
+
+
+
+% \newtheorem{izrek}{Izrek} --- Z njim ustvariš novo okolje. 
+%\begin{izrek}
+%Vsako soda število je deljivo z 2.
+%\end{izrek} Izpiše kot :  Izrek 1. Vsako sodo število je deljivo z 2.
+
+% Theoremstyle{definition} --- Ta ukaz določa slog, ki se bo uporabljal za okolja. V tem primeru smo izbrali slog "definition", ki je uporabljen za definicije, primere in naloge. Slog "definition" običajno uporablja normalno pisavo (ne ležečo ali krepko) in nima dodatnih poudarkov, kar je primerno za predstavitev formalnih definicij in nalog.
+
+
+%\theoremstyle{definition}       Vrsti red je pomemben. theoremstyle velja za vse newtheorem, ki sledijo.
+%\newtheorem{definicija}{Definicija}
+%
+%\theoremstyle{plain}
+%\newtheorem{izrek}{Izrek}
+
+
+
+
+
+% \textsc{XML} -- Small caps (pomanjšane velike črke)
+%\texttt{bool} -- Typewriter / monospace (pisava za kodo) za ime spremenljivke ali funkcije
+%\textit{...}    % ležeče
+%\textbf{...}    % krepko
+%\emph{...}      % poudarek (pameten italic)
+%\texttt{...}    % koda
+%\textsc{...}    % small caps
+%\underline{...} % podčrtano
+%\textbf{...}    % krepko
+%\textit{...}    % ležeče
+%\emph{...}      % poudarek (pameten italic)
+%\texttt{...}    % koda
+%\textsc{...}    % small caps
+%\underline{...} % podčrtano
+
+
+
+%Naj bo $n = 100$ ter $s_1$ sprememba urnika, ki nas je pripeljala v lokalni maksimum.
+%To spremembo (npr.\ zamenjava srečanja$_i$ in srečanja$_j$) shranimo v seznam tabujev.
+%V naslednjem koraku izvedemo spremembo $s_2$, ki se prav tako shrani v seznam
+%prepovedanih sprememb.
+
+%(\underline{G}raphical \underline{U}ser \underline{I}nterface)
+% (\textsc{\underline{g}raphical \underline{u}ser \underline{i}nterface})   Če bi hotel, da je cel izraz npr. še v small caps (ni nujno, ampak včasih se uporablja), bi bilo:
+
+
+
+
+
+
+%\emph{Profesor} naredi besedo "Profesor" poševno, kar je pogosto uporabljeno za poudarjanje besed ali izrazov v besedilu. Lahko bi uporabili tudi \textbf{Profesor} za krepko pisavo ali \underline{Profesor} za podčrtano pisavo, odvisno od tega, kako želimo poudariti besedo.
+
+
+% $\frac{n^2+1}{n+1}$ --- Ta ukaz ustvarja ulomek, kjer je števec $n^2 + 1$ in imenovalec $n + 1$. V dokumentu bo prikazano kot $\frac{n^2 + 1}{n+1}$.
+
+% $\sqrt{n^2+4n+1}$ --- Ta ukaz ustvarja kvadratni koren izraza $n^2 + 4n + 1$. V dokumentu bo prikazano kot $\sqrt{n^2 + 4n + 1}$.
+
+% $\lim_{n\to\infty}\frac{1}{n}$ --- Ta ukaz ustvarja limitni izraz, ki predstavlja limitu funkcije $\frac{1}{n}$, ko $n$ gre proti neskončnosti. V dokumentu bo prikazano kot $\lim_{n \to \infty} \frac{1}{n}$.
+
+% $x\cdot y$ --- Ta ukaz ustvarja izraz, ki predstavlja zmnožek $x$ in $y$. V dokumentu bo prikazano kot $x \cdot y$.
+
+% $\int_0^1 x^2\,dx$ --- Ta ukaz ustvarja integral funkcije $x^2$ od 0 do 1. V dokumentu bo prikazano kot $\int_0^1 x^2 \, dx$.
+
+% $|x-a_n|$ --- Ta ukaz ustvarja izraz, ki predstavlja absolutno vrednost razlike med $x$ in $a_n$. V dokumentu bo prikazano kot $|x - a_n|$.
+
+% $e^{-n}$ --- Ta ukaz ustvarja izraz, ki predstavlja eksponentno funkcijo $e$ na potenco $-n$. V dokumentu bo prikazano kot $e^{-n}$.
+
+% $(a_n)_{n\in\mathbb N}$ --- Ta ukaz ustvarja zaporedje $a_n$, kjer $n$ spada v množico naravnih števil $\mathbb{N}$. V dokumentu bo prikazano kot $(a_n)_{n \in \mathbb{N}}$.
+
+% $\lim_{n\to\infty}\left(\sqrt{n^2+7n}-\sqrt{n^2+4n+1}\right)$ --- Ta ukaz ustvarja limitni izraz, ki predstavlja limitu izraza $\sqrt{n^2 + 7n} - \sqrt{n^2 + 4n + 1}$, ko $n$ gre proti neskončnosti. V dokumentu bo prikazano kot $\lim_{n \to \infty} \left( \sqrt{n^2 + 7n} - \sqrt{n^2 + 4n + 1} \right)$.
+
+% \section{Uvod} --- Ta ukaz ustvarja novo sekcijo z naslovom "Uvod". V dokumentu bo prikazano kot večji in odebeljen naslov "Uvod", ki bo označeval začetek novega dela dokumenta.
+% \subsection{Motivacija} --- Ta ukaz ustvarja novo podsekcijo z naslovom "Motivacija". V dokumentu bo prikazano kot manjši in odebeljen naslov "Motivacija", ki bo označeval začetek novega dela znotraj sekcije "Uvod".
+
+
+%Naj bo funkcija $f(x) = x^2$. Površino pod grafom funkcije na intervalu $[0,1]$
+%izračunamo z določenim integralom
+%\[
+%\int_0^1 x^2 \, dx = \frac{1}{3}.
+%\]
+
+
+%\int_0^5 x \, dx        % od 0 do 5
+%\int_{-1}^{2} x^2 \, dx % od -1 do 2
+%\int x^2 \, dx          % nedoločen integral (ni mej) nima števil recimo 0 1
+
+% \to ustvari simbol puščice
+
+%\[
+%\sum_{i=1}^{n} i = \frac{n(n+1)}{2}     to je kot vsota od i=1 do n, ki se izračuna s formulo n(n+1)/2
+%\]
+
+
+$\[
+$\lim_{x \to 0} \frac{\sin x}{x} = 1    to zgleda kot limita ko gre x proti 0 od sinus x deljeno z x je enako 1
+$\]
+
+
+
+%\[
+%\lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = e  to je limita ko gre n proti neskončno oklepaj
+%\]                                                    1 plus 1 ulomljeo n, vse skupaj na potenco n
+%                                                      je enako eulerjevo število e
+
+
+
+
+
+
+
+
+%\begin{enumerate}
+%\item prvi element
+%\item drugi element
+%\item tretji element
+%\end{enumerate}
+%
+%\cdot --- Ta ukaz ustvarja simbol za zmnožek, prikazano bo kot krat pika
+
+
+% \[
+%k_1 \cdot u_1 + k_2 \cdot u_2 + \dots + k_{n-1} \cdot u_{n-1} + k_n \cdot u_n
+%\]
+
+
+% \newpage --- Ta ukaz povzroči, da se vsebina, ki sledi, začne na novi strani. To je uporabno, če želimo ločiti različne dele dokumenta ali zagotoviti, da določena vsebina začne na novi strani.
+
+% \clearpage --- Ta ukaz povzroči, da se vsebina, ki sledi, začne na novi strani. To je uporabno, če želimo ločiti različne dele dokumenta ali zagotoviti, da določena vsebina začne na novi strani.

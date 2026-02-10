@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"> <!-- določitev kodiranja znakov -->
+    <link rel="stylesheet" href="oblikovanje.css"> <!-- povezava do datoteke s CSS oblikovanjem -->
+    <title>Indijske tekačice</title> <!-- Vedno mora biti naslov strani -->
+</head>
+
+<body>
+    <h1>Indijske tekačice</h1>
+
+    <!-- Naloga 2: povezava https://en.wikipedia.org/wiki/Indian_Runner_duck 
+     Ko kliknemo na povezavo, se odpre nova stran z vsebino o indijskih tekačicah
+      na Wikipediji. To moramo zaviti v oznako <a> (anchor) in uporabiti atribut href, 
+    ki določa URL povezave.
+    -->
+
+    <p>
+  Vsebina te strani je delno povzeta po strani o
+  <a href="https://en.wikipedia.org/wiki/Indian_Runner_duck">
+    Indijskih tekačicah
+  </a>
+  na Wikipediji.
+    </p>
+
+
+    <!-- <p> naredi odstavek, strong naredi močan poudarek besedila -->
+        <!-- <em> naredi poudarek besedila, npr. poševno -->
+    <p><strong>Indijske tekačice</strong> so pasma <em>Anas platyrhynchos domesticus</em>,
+        domače race. Stojijo pokončno kot pingvini in namesto da bi racale, tečejo.
+        Našli so jih na indonezijskih otokih Lombok, Java in Bali,
+        kjer so jih prodajali kot nesnice ali za meso.
+        Te race ne letijo in redko naredijo gnezda ter izležejo svoja jajca.
+        Tečejo ali hodijo, pogosto pa jajca odložijo kjerkoli se nahajajo.
+    </p>
+
+    <h3>Vsebina</h3>
+    <!-- Naloga 3 
+     <ol oznaka za oštevilčen seznam, <ul> za neštevilčen seznam, 
+        <li> za posamezne elemente seznama
+    -->
+    <ol>
+        <li><a href="#anatomija">Anatomija</a></li>
+        <li><a href="#izvor">Izvor</a></li>
+    </ol>
+
+
+    <h2 id="anatomija">Anatomija</h2>
+    
+
+    <div class="slika">
+        <img src="indijske-tekacice.jpg" alt="Indijske tekačice">
+        <p>Indijske tekačice</p>
+    </div>
+
+    <p>Pokončna drža je posledica medeničnega obroča, ki je v primerjavi z drugimi pasmami 
+        domačih rac pomaknjen bolj proti repnemu delu telesa. Ta zgradbena značilnost omogoča, 
+        da se ptice gibljejo s hitro hojo namesto značilnega račjega, kakršnega vidimo pri 
+        drugih pasmah rac.</p>
+
+    <p>Indijske tekačice imajo dolgo, klinasto oblikovano glavo. Kljun se gladko zliva 
+        z glavo in je raven od konice do zadnjega dela lobanje. Glava je bolj plitva kot pri 
+        večini drugih pasem rac, kar daje pticam eleganten, športen videz, značilen za to pasmo. 
+        Oči so nameščene visoko na glavi. Indijske tekačice imajo dolg, vitek vrat, ki se 
+        gladko nadaljuje v telo. Telo je dolgo, vitko, a na videz zaobljeno.
+        Perje je tesno prilegajoče se. Racaki imajo na konici repa majhen zavitek perja, 
+        medtem ko imajo race raven rep. Spola je težko razlikovati, dokler ptice ne dosežejo 
+        polne spolne zrelosti.</p>
+    
+    <!-- Naloga 4 -->
+    <!-- začetek tabele -->
+      <table> <!-- oznaka za tabelo -->
+  <caption>Teža in višina indijskih tekačic.</caption> <!-- naslov tabele -->
+  <tr> <!-- oznaka za vrstico -->
+    <th></th> <!-- oznaka za glavo stolpca oz prazna prva celica -->
+    <th>Samice</th> <!-- glava stolpca za samice -->
+    <th>Samci</th> <!-- glava stolpca za samce -->
+  </tr> <!-- konec glave tabele -->
+  <tr> <!-- nova vrstica za podatke -->
+    <th>Teža</th> <!-- oznaka za glavo vrstice -->
+    <td>1.4–2.0 kg</td> <!-- podatki za samice -->
+    <td>1.6–2.3 kg</td> <!-- podatki za samce -->
+  </tr> <!-- nova vrstica za podatke -->
+  <tr> <!-- nova vrstica za podatke -->
+    <th>Višina</th> <!-- oznaka za glavo vrstice -->
+    <td>50–68 cm</td> <!-- podatki za samice -->
+    <td>60–76 cm</td> <!-- podatki za samce -->
+  </tr> <!-- konec tabele -->
+</table>
+    <!-- konec tabele -->
+
+    <h2 id="izvor">Izvor</h2>
+
+    <div class="slika">
+        <img src="modra-racka.jpg" alt="Modra indijska tekačica">
+        <p>Modra indijska tekačica</p>
+    </div>
+
+    <p>Indijske tekačice so udomačene vodne ptice, ki izvirajo iz Malajskega otočja. 
+        Ni dokazov, da bi dejansko izvirale iz  Indije. Tako kot pri mnogih drugih pasmah 
+        vodnih ptic, uvoženih v Evropo in Ameriko, se izraz "indijske" najverjetneje nanaša 
+        bodisi na nakladalno pristanišče bodisi na prevoz z ladjami vzhodnoindijske družbe.</p>
+
+    <p>Po navedbah Matthewa Smitha iz leta 1923 so uvozi v Cumbrii vključevali povsem rjave 
+        tekačice in povsem bele tekačice, pa tudi pisane različice (rjavo-bele in sivo-bele). 
+        Joseph Walton je med letoma 1908 in 1909 uspešno pripeljal ptice svežih linij z 
+        Lomboka in Jave, s čimer je temeljito oživil vzrejo, ki je bila že močno pomešana 
+        z lokalnimi pticami. Nadaljnji uvozi v letih 1924 in 1926 so prispevali k nadaljnji 
+        oživitvi pasme.</p>
+
+</body>
+
+</html>
+
+
+
+<!--
+
+Vedno na začetku 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="oblikovanje.css"> #- povezava do datoteke s CSS oblikovanjem
+    <title>Indijske tekačice</title>
+</head>
+<body>
+    ... vsebina strani ...
+</body>
+</html>
+
+
+Za dodat link na besedo ali sliko uporabimo oznako <a> (anchor) ali <img> (image).
+    <p>
+  Vsebina te strani je delno povzeta po strani o
+  <a href="https://en.wikipedia.org/wiki/Indian_Runner_duck">
+    Indijskih tekačicah na Wikipediji
+  </a>.
+</p>
+
+oz slika:
+<a href="https://www.wikipedia.org">
+  <img src="slika.jpg" alt="Opis slike">
+</a>
+
+
+
+
+
+
+<ol>  = oštevilčen seznam (kazalo)
+<li>  = ena postavka v seznamu
+<a href="#id"> = povezava na element z id="id" na isti strani
+<h2 id="anatomija"> = naslov razdelka + sidro za povezavo
+
+Klik na <a href="#anatomija"> skoči na <h2 id="anatomija">.
+
+
+
+
+
+<table>
+  <tr>prva vrstica</tr>
+  <tr>druga vrstica</tr>
+  <tr>tretja vrstica</tr>
+</table>
+    
+
+
+
+
+Pri naslovnih oznakah (h1, h2, h3) je pomembno,
+da so smiselne in da se uporabljajo v pravilnem hierarhičnem vrstnem redu.
+H1 naj bo rezerviran za glavni naslov strani,
+H2 in H3 uporabljeni za podnaslove in nadaljnje razčlenjevanje vsebine. 
+V tem primeru bi bilo smiselno uporabiti H1 za glavni naslov "Indijske tekačice", 
+H2 za glavne odseke "Anatomija" in "Izvor", ter H3 za morebitne pododseke znotraj teh glavnih odsekov.
+
+<h1>Indijske tekačice</h1>
+
+<h2>Anatomija</h2>
+<h2>Izvor</h2>
+<h2>Vzreja</h2>
+
+-->

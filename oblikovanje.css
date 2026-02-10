@@ -1,0 +1,106 @@
+/* slog za celotno telo dokumenta */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 40em;
+    margin: auto;
+    text-align: justify;
+    color: #0c1445;
+}
+
+/* slog za element div, ki se uporablja za posamezne odstavke */
+div {
+    margin-right: 2em;
+    font-size: 0.9em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a, h2 { color: rgb(169, 123, 23); }
+
+h1 {
+    font-size: 1.5em;
+    color: rgb(50, 148, 97);
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-top: 1.5em;
+    border-top: 1px #AAAAAA solid;
+    padding-top: 0.5em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-size: 0.8em;
+}
+
+/* slog za caption element v tabeli */
+caption {
+    font-size: 0.9em;  /* velikost pisave v captionu */
+    padding: 10px;     /* prostor okoli besedila v captionu */
+    caption-side: bottom; /* to je privzeta vrednost, lahko pa je tudi top, left ali right */
+    font-style: italic;   /* to je ležeča oz poševna pisava */
+}
+
+/* slog za th elemente v tabeli */
+th, td { padding: 5px 10px; }
+tr th:first-child { padding-right: 40px; }
+tr:first-child th { border-bottom: 1px solid black; }
+
+/* slog za slike in pripise pod njimi */
+.slika {
+    float: left;
+    width: 25%;
+}
+.slika p {
+    font-size: 0.8em; /* manjša velikost pisave za pripise */
+    text-align: center; /* poravnava besedila na sredino */
+}
+
+
+
+/* 
+Dvopičje loči lastnosti od vrednosti, podpičje loči posamezna pravila,
+zaviti oklepaji pa obdajajo skupino pravil,
+ ki se nanašajo na določen element ali skupino elementov. 
+
+.slika     = celoten element z razredom "slika" (slika + napis)
+.slika p   = samo <p> znotraj elementa .slika (napis pod sliko)
+
+font-style: italic; = ležeče
+font-weight: bold;  = krepko
+text-align: center; = sredinsko besedilo
+font-size: 1em;        = velikost pisave
+font-family: Arial;    = tip pisave
+color: red;            = barva besedila
+background-color: #eee;= barva ozadja
+text-align: left;      = levo poravnano
+text-align: right;     = desno poravnano
+text-align: justify;   = obojestransko poravnano
+width: 25%;            = širina elementa
+max-width: 40em;       = največja širina
+height: auto;          = samodejna višina
+
+height: auto; = višina se prilagodi vsebini (privzeto)
+height: px;   = fiksna višina (neprilagodljiva)
+height: %;    = relativno glede na višino starša
+height: em;   = relativno glede na velikost pisave
+height: vh;   = relativno glede na višino okna (viewport)
+
+
+
+
+
+
+
+
+*/
